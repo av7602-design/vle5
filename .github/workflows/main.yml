@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Build Docker image
-      run: docker build -t abi2005kka/devops-lab .
+      run: docker build -t abi2005kka/devops-lab ./app
 
     - name: Push to Docker Hub
       run: |
